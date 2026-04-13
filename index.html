@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/output.css">
     <script src="https://kit.fontawesome.com/f6e39ba741.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Git website</title>
 </head>
 <body>
 <nav class="relative max-h-screen w-full flex flex-col p-1 px-3 justify-between items-center border-b-2  border-black md:border-none bg-slate-300 md:h-14 md:flex-row ">
     <div id="logo" class="hidden md:block md:text-3xl md:left-2 md:top-1 md:font-bold md:w-1/3">
-        MongoDB
+        MongoDB 
     </div>
     <div id="logo" class=" absolute text-3xl left-2 top-1 font-bold w-1/3 md:hidden">
         MongoDB
     </div>
     <!-- Harmbuger Section -->
-        <div class="flex flex-col space-y-3 text-3xl mt-6 tracking-wider px-4 py-5 md:hidden">
+    <div class="flex flex-col space-y-3 text-3xl mt-6  px-4 py-5 md:hidden">
         <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-black border-b-2 hover:bg-gray-400 hover:text-white">Home</a>
         <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-b-2 border-gray-500  hover:bg-gray-400 hover:text-white">Service</a>
         <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-b-2 border-gray-500  hover:bg-gray-400 hover:text-white">Product</a>
         <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-b-2 border-gray-500  hover:bg-gray-400 hover:text-white">About</a>
     </div>
     <!-- Large Screen Section -->
-    <div class="hidden bg-white mt-5 py-2 px-6 justify-center mb-5 items-center space-x-10 rounded-full md:flex">
+    <div class="hidden bg-white mt-5 py-2 px-6 justify-center mb-5 items-center  shadow-2xl space-x-10 rounded-full md:flex">
         <a href="#" class="text-center text-xl hover:text-red-400">Home</a>
         <a href="#" class="text-center text-xl hover:text-red-400">Service</a>
         <a href="#" class="text-center text-xl hover:text-red-400">Product</a>
-        <a href="#" class="text-center text-xl hover:text-red-400">About</a>
+        <a href="#" class="text-center text-xl hover:text-red-400 ">About Us</a>
     </div>
     <div id="start" class="text-lg text-white mb-4 tracking-wide border-black shadow-lg py-2 px-20 bg-orange-500 cursor-pointer rounded-2xl hover:bg-orange-800 md: md:mb-0 md:px-5 md:p-2 md:pt-2">Get Started</div>
 </nav>
 <!-- Hero Section -->
- <div id="hero" style="background-image: url('images/Paris.jpg');" class="relative h-screen w-auto bg-url('/images/Paris.jpg') bg-cover bg-center flex justify-between items-center flex-col md:flex-row">
+ <div id="hero" style="background-image: url('images/Paris.jpg');" class="relative overflow-hidden animate-fadeUp h-screen w-auto bg-url('/images/Paris.jpg') bg-cover bg-center flex justify-between items-center flex-col md:flex-row">
 
      <div class="absolute inset-0 bg-black/50"></div>
     <!-- Left -->
@@ -47,20 +47,21 @@
           <div id="start" class="text-lg text-white mb-4 tracking-wide border-black shadow-lg py-2 px-10 bg-sky-400 cursor-pointer rounded-2xl hover:bg-orange-800 md: md:mb-0 md:px-5 md:p-2 md:pt-2 md:justify-self-end">Get Started</div>
      </div>
     <!-- Right -->
-    <div class="m-8 mb-6">
-        <div>
-            Image for the Hero Section
+    <div class="m-8 mb-6 relative">
+       <!-- <div class=" absolute opacity-0 right-0 bottom-12 h-60 w-60 bg-white rounded-full blur-sm"></div> --> 
+        <div class="mt-4 ml-16 text-yellow-100">
+           <img src="images/hero.png" class="" alt="hero image">
         </div>
     </div>
  </div>
 
     <!-- Make Cards with Button -->
 <div class="flex flex-col bg-gray-300 h-96 w-full">
-    <h2 class="text-3xl text-center font-bold mt-4 italic ">
+    <h2 class="text-3xl text-center font-bold mt-4 italic">
        What Our Customers Say About Us:
     </h2>
  <div class="py-3 px-4 m-auto md:flex md:flex-row md:justify-between md:items-center md:flex-2">
-   <div class="rounded-md h-64 w-1/3 m-1 mx-20 flex justify-between items-center flex-col bg-white">
+   <div class=" shadow-2xl shadow-black  rounded-md h-64 w-1/3 m-1 p-2 mx-20 flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
     <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
@@ -68,47 +69,44 @@
         </h3>
     </div>
     <div class="">
-        <P class="text-wrap text-center text-sm">
-            I have make use the of the product and service of the World Class City Programming,
-            All I can say is that They are the best in the Aspect.
+        <P class="text-wrap text-center text-lg">
+            At World Class City, they offer the best travel tour guide ever.
         </P>
     </div>
-        <button type="button" class="mb-4 border bg-black text-white border-black p-4 py-2 px-3 rounded-md">
-            Buy Product
+        <button type="button" class="mb-4 border  bg-black text-white border-black p-4 py-2 px-3 rounded-md hover:-translate-y-0.5 hover:duration-300 hover:delay-75 hover:ease-out">
+            Start Travels
         </button>
     </div>
-   <div class="shadow-xl rounded-md h-64 w-1/3 m-1 mx-20 flex justify-between items-center flex-col bg-white">
+   <div class="shadow-2xl shadow-black rounded-md h-64 w-1/3 m-1 mx-20 p-2 flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
     <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
-            Sarah Alli
+            James Larkin
         </h3>
     </div>
     <div class="">
-        <P class="text-wrap text-center text-sm">
-            I have make use the of the product and service of the World Class City Programming,
-            All I can say is that They are the best in the Aspect.
+        <P class="text-wrap text-center text-lg">
+            This is Organization offers the best tourist guide you can ever imagine.
         </P>
     </div>
-        <button type="button" class="mb-4 border bg-black text-white border-black p-4 py-2 px-3 rounded-md">
-            Buy Product
+        <button type="button" class="mb-4 border bg-black text-white border-black p-4 py-2 px-3 rounded-md hover:-translate-y-0.5 hover:duration-300 hover:delay-75 hover:ease-out">
+            Start Travels
         </button>
     </div>
-<div class="rounded-md h-64 w-1/3 m-1 mx-20 flex justify-between items-center flex-col bg-white">
+<div class="shadow-2xl shadow-black rounded-md h-64 w-1/3 m-1 mx-20 p-2 flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
     <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
-            Sarah Alli
+            Peter Surtherland
         </h3>
     </div>
     <div class="">
-        <P class="text-wrap text-center text-sm">
-            I have make use the of the product and service of the World Class City Programming,
-            All I can say is that They are the best in the Aspect.
+        <P class="text-wrap text-center text-lg">
+            You are looking for good Tourist guide?... Search no more World Class City is here for you.
         </P>
     </div>
-        <button type="button" class="mb-4 border bg-black text-white border-black p-4 py-2 px-3 rounded-md">
-            Buy Product
+        <button type="button" class="mb-4 border bg-black text-white border-black p-4 py-2 px-3 rounded-md hover:-translate-y-0.5 hover:duration-300 hover:delay-75 hover:ease-out">
+            Start Travels
         </button>
     </div>
     </div>
