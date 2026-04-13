@@ -55,7 +55,7 @@ This is a personal learning project, but suggestions and feedback are welcome!
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is available under the MIT License.
 
 ---
 
