@@ -554,6 +554,15 @@ video {
   display: none;
 }
 
+.para{
+  color: red;
+  display: none;
+}
+
+.image{
+  display: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1087,14 +1096,6 @@ video {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.btn{
-  transition-delay: 2ms;
-}
-
-#logo{
-  color: rgba(255, 166, 0, 0.753);
 }
 
 .hover\:w-full:hover {

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn{
+  transition-delay: 2ms;
+}
+#logo{
+    color: rgba(255, 166, 0, 0.753);
+}

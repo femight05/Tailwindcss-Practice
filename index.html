@@ -8,29 +8,38 @@
     <script src="https://kit.fontawesome.com/f6e39ba741.js" crossorigin="anonymous"></script>
     <title>Git website</title>
 </head>
-<body>
+<body class="animate-fadeUp">
 <nav class="relative max-h-screen w-full flex flex-col p-1 px-3 justify-between items-center border-b-2  border-black md:border-none bg-slate-300 md:h-14 md:flex-row ">
     <div id="logo" class="hidden md:block md:text-3xl md:left-2 md:top-1 md:font-bold md:w-1/3">
         MongoDB 
     </div>
-    <div id="logo" class=" absolute text-3xl left-2 top-1 font-bold w-1/3 md:hidden">
+
+    <div class="flex justify-between items-center p-4">
+    <!-- Mobile Logo -->
+    <div id="logo" class="fixed left-0 px-2 py-2 text-3xl font-bold w-1/3 md:hidden">
         MongoDB
     </div>
     <!-- Harmbuger Section -->
-    <div class="flex flex-col space-y-3 text-3xl mt-6  px-4 py-5 md:hidden">
-        <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-black border-b-2 hover:bg-gray-400 hover:text-white">Home</a>
-        <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-black border-b-2  hover:bg-gray-400 hover:text-white">Service</a>
-        <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center  border-black border-b-2  hover:bg-gray-400 hover:text-white">Product</a>
-        <a href="#" class="border rounded-md py-1 px-20 border-t-2 text-center border-black border-b-2  hover:bg-gray-400 hover:text-white">About</a>
+    <div id="menu" class="fixed w-64 show h-screen hidden top-0 right-0 z-50 bg-sky-400/20 list-none text-white space-y-5 text-2xl rounded-md backdrop-blur-xl md:hidden">
+        <li id="close-btn" class="rounded close px-8 py-3 mt-2 w-0.5" ><a href="#" class="hover:bg-red-600" ><svg xmlns="http://www.w3.org/2000/svg" height="30px" class="hover:bg-red-600/70 p-1" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+        <li class="hover:bg-white/70 rounded px-8 py-3 mt-2 hover:text-black hover:w-full"><a href="#">Home</li>
+        <li class="hover:bg-white/70 rounded px-8 py-3 mt-2 hover:text-black hover:w-full"><a href="#">Service</li>
+        <li class="hover:bg-white/70 rounded px-8 py-3 mt-2 hover:text-black hover:w-full"><a href="#">Product</li>
+        <li class="hover:bg-white/70 rounded px-8 py-3 mt-2 hover:text-black hover:w-full"><a href="#">About Us</li>
+        <li class="hover:bg-white/70 rounded px-8 py-3 mt-2 hover:text-black hover:w-full"><a href="#">Contact Us</li>
+    </div>
     </div>
     <!-- Large Screen Section -->
-    <div class="hidden bg-white mt-5 py-2 px-6 justify-center mb-5 items-center  shadow-2xl space-x-10 rounded-full md:flex">
+    <div class="hidden bg-white/20 mt-5 py-2 px-6 justify-center mb-5 items-center backdrop-blur-2xl  shadow-2xl space-x-10 rounded-full md:flex">
         <a href="#" class="text-center text-xl hover:text-red-400">Home</a>
         <a href="#" class="text-center text-xl hover:text-red-400">Service</a>
         <a href="#" class="text-center text-xl hover:text-red-400">Product</a>
         <a href="#" class="text-center text-xl hover:text-red-400 ">About Us</a>
     </div>
-    <div id="start" class="text-lg text-white mb-4 tracking-wide border-black shadow-lg py-2 px-20 bg-orange-500 cursor-pointer rounded-2xl hover:bg-orange-800 md: md:mb-0 md:px-5 md:p-2 md:pt-2">Get Started</div>
+    <div id="start" class="hidden text-lg text-white mb-4 tracking-wide border-black shadow-lg py-2 px-20 bg-orange-500 cursor-pointer rounded-2xl hover:bg-orange-800 md: md:mb-0 md:px-5 md:p-2 md:pt-2 md:block">Get Started</div>
+    <div id="menu-btn" class="fixed right-2 top-1 py-1 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </div>
 </nav>
 <!-- Hero Section -->
  <div id="hero" style="background-image: url('images/Paris.jpg');" class="relative overflow-hidden animate-fadeUp h-screen w-auto bg-url('/images/Paris.jpg') bg-cover bg-center flex justify-between items-center flex-col md:flex-row">
@@ -48,7 +57,6 @@
      </div>
     <!-- Right -->
     <div class="m-8 mb-6 relative">
-       <!-- <div class=" absolute opacity-0 right-0 bottom-12 h-60 w-60 bg-white rounded-full blur-sm"></div> --> 
         <div class="mt-4 ml-16 text-yellow-100">
            <img src="images/hero.png" class="" alt="hero image">
         </div>
@@ -56,14 +64,14 @@
  </div>
 
     <!-- Make Cards with Button -->
-<div class="flex flex-col bg-gray-300 h-96 w-full">
+<div class="flex flex-col bg-gray-300 backdrop-blur-sm h-96 w-full">
     <h2 class="text-2xl text-center font-bold mt-4 italic md:text-3xl">
        What Our Customers Say About Us:
     </h2>
  <div class="py-3 px-4 m-auto md:flex md:flex-row md:justify-between md:items-center md:flex-2">
    <div class=" shadow-2xl shadow-black  rounded-md h-64 w-64 md:w-1/3 m-1 p-2 mx-20 flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
-    <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
+    <img src="images/Paris.jpg" class="rounded-xl text-center -mt-8 w-14 h-12">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
             Sarah Alli
         </h3>
@@ -73,13 +81,13 @@
             At World Class City, they offer the best travel tour guide ever.
         </P>
     </div>
-        <button type="button" class="mb-4 border  bg-black text-white border-black p-4 py-2 px-3 rounded-md hover:-translate-y-0.5 hover:duration-300 hover:delay-75 hover:ease-out">
+        <button type="button" class="mb-4 border btn  bg-black text-white border-black p-4 py-2 px-3 rounded-md hover:-translate-y-0.5 hover:duration-300 hover:delay-75 hover:ease-out">
             Start Travels
         </button>
     </div>
    <div class="shadow-2xl shadow-black rounded-md h-64 w-1/3 m-1 mx-20 p-2 hidden md:flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
-    <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
+    <img src="images/Paris.jpg" class="rounded-lg text-center -mt-8 w-14 h-12">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
             James Larkin
         </h3>
@@ -95,13 +103,13 @@
     </div>
 <div class="shadow-2xl shadow-black rounded-md h-64 w-1/3 m-1 mx-20 p-2 hidden md:flex justify-between items-center flex-col bg-white">
     <div class="flex flex-col gap justify-center items-center space-y-2">
-    <img src="images/Paris.jpg" class="rounded-lg text-center mt-4 w-10">
+    <img src="images/Paris.jpg" class="rounded-lg text-center -mt-8 w-14 h-12">
         <h3 class="text-1xl mb-5 font-semibold tracking-wide text-center">
             Peter Surtherland
         </h3>
     </div>
     <div class="">
-        <P class="text-wrap text-center text-lg">
+        <P class="para text-wrap text-center text-lg">
             You are looking for good Tourist guide?... Search no more World Class City is here for you.
         </P>
     </div>
@@ -153,5 +161,6 @@
          </div>
     </div>
  </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
