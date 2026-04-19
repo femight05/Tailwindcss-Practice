@@ -1097,6 +1097,23 @@ video {
   color: rgba(255, 166, 0, 0.753);
 }
 
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.check{
+  animation-name: slideUp;
+  animation-duration: 5s;
+}
+
 .hover\:w-full:hover {
   width: 100%;
 }
